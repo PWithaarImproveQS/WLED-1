@@ -142,8 +142,8 @@ inline void applyBrightness_visualremote() {
     UpdateBrightness = false;
   }
   bri = brightnessSteps_visualremote[NextBrightnessStep]; 
-  DEBUG_PRINTF("Brightness set: %u\n", bri);
-  DEBUG_PRINTF("Brightness step: %u\n", NextBrightnessStep);
+ // DEBUG_PRINTF("Brightness set: %u\n", bri);
+ // DEBUG_PRINTF("Brightness step: %u\n", NextBrightnessStep);
   stateUpdated(CALL_MODE_BUTTON);
 }
 
@@ -231,6 +231,7 @@ void magic_flow(uint8_t program) {
 }
 
 
+
 inline void applyPreset_visualremote(uint8_t presetID) {
   if (MagicFlowMode > 0) 
   {
@@ -243,13 +244,30 @@ inline void applyPreset_visualremote(uint8_t presetID) {
       FeedFish();
       return;;
     }
-    increaseSpeed();
+    if (presetID == 4)
+    {
+      increaseSpeed();
+    }
     return;
   };
   presetToApply = presetID;  
   applyPreset(presetID, CALL_MODE_BUTTON_PRESET);    
   brightnessrepeat = 2;
   UpdateBrightness = true;
+}
+
+inline void applyPreset3_visualremote(uint8_t presetID) {
+  if (presetToApply == 3)
+  {
+    applyPreset_visualremote(8);
+    return;
+  }
+  if (presetToApply == 8)
+  {
+    applyPreset_visualremote(9);
+    return;
+  }
+  applyPreset_visualremote(3);
 }
 
 
@@ -278,7 +296,7 @@ class UsermodVisualRemote : public Usermod {
     Pattern patterns[255]; // Array to hold patterns for each preset
     bool isDisplayingEffectIndicator = false;
 
-    uint8_t currentEffectIndex = 1;
+    uint8_t currentEffectIndex = MenuChoiceStart;
     unsigned long lastTime = 0;
 
     Pattern* getPatternById(uint8_t id) {
@@ -294,10 +312,12 @@ class UsermodVisualRemote : public Usermod {
   void setup() {
     Serial.println("VisualRemote mod active!");
      String name = "";
-    for (unsigned presetIndex = 1; presetIndex <= 255; presetIndex++)
+    for (unsigned presetIndex = 1; presetIndex < 50; presetIndex++)
     {
-       if (!getPresetName(presetIndex, name)) break; // no more presets
-       preset_available[presetIndex] = true;
+      Serial.printf("Preset Index: %u, Name: %s\n", presetIndex, name.c_str());
+
+      preset_available[presetIndex] = getPresetName(presetIndex, name);
+       
     }
   }
     void addToConfig(JsonObject& root) override {
@@ -325,35 +345,46 @@ class UsermodVisualRemote : public Usermod {
 
 
    void onButtonUpPress() {
+    
     if (MagicFlowMode > 0) 
     {
       magic_flow(MagicFlowProgram);
     } else {
       do {
         currentEffectIndex++;
+    
         if (currentEffectIndex >= 255) {
           currentEffectIndex = MenuChoiceStart;
         }
+        DEBUG_PRINTF("> Up effect %d %d \n", currentEffectIndex, MenuChoiceStart);
+        DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
+
       } while (!preset_available[currentEffectIndex]);
       DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
       applyPreset_visualremote(currentEffectIndex);
     } 
    }
 
-    void onButtonDownPress() {
-      MenuMode = true;      
+   void onButtonDownPress() {
+    if (MagicFlowMode > 0) 
+    {
+      magic_flow(MagicFlowProgram);
+    } else {
       do {
-        if (currentEffectIndex <= MenuChoiceStart) {
-          currentEffectIndex = 255;
-        } else {
-          currentEffectIndex--;
+        currentEffectIndex--;
+
+     
+        if (currentEffectIndex < MenuChoiceStart) {
+          currentEffectIndex = 60;
         }
+        DEBUG_PRINTF("> Down effect %d %d \n", currentEffectIndex, MenuChoiceStart);
+        DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
+
       } while (!preset_available[currentEffectIndex]);
-      DEBUG_PRINTF("< Start Display effect %d \n", currentEffectIndex);
+      DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
       applyPreset_visualremote(currentEffectIndex);
-    }
-
-
+    } 
+   }
 
 
     inline void handleRemote_visualremote(uint8_t *incomingData, size_t len) {
@@ -411,31 +442,31 @@ class UsermodVisualRemote : public Usermod {
         case WIZMOTE_BUTTON_NIGHT_TRIPLE         : broadcastProgram();                                break;
         case WIZMOTE_BUTTON_NIGHT_LONG           : toggleSyncMode_visualremote();                                break;
         case WIZMOTE_BUTTON_BRIGHT_UP_SHORT      : onButtonUpPress();                                               break;
-        case WIZMOTE_BUTTON_BRIGHT_UP_LONG      : applyPreset_visualremote(5);    break;
+        case WIZMOTE_BUTTON_BRIGHT_UP_LONG      : applyPreset_visualremote(6);    break;
         case WIZMOTE_BUTTON_BRIGHT_DOWN_SHORT    : onButtonDownPress();                                             break;
-        case WIZMOTE_BUTTON_BRIGHT_DOWN_LONG    : applyPreset_visualremote(6);    break;
+        case WIZMOTE_BUTTON_BRIGHT_DOWN_LONG    : applyPreset_visualremote(5);    break;
 
         case WIZMOTE_BUTTON_ONE_SHORT       : applyPreset_visualremote(1);    break;
-        case WIZMOTE_BUTTON_ONE_DOUBLE      : applyPreset_visualremote(7);    break;
+        case WIZMOTE_BUTTON_ONE_DOUBLE      : //applyPreset_visualremote(7);    break;
         case WIZMOTE_BUTTON_ONE_TRIPLE      :
         case WIZMOTE_BUTTON_ONE_QUADRUPLE   : magic_flow(16);    break;;
         case WIZMOTE_BUTTON_ONE_LONG        : applyPreset_visualremote(20);    break;
 
         case WIZMOTE_BUTTON_TWO_SHORT       : applyPreset_visualremote(2);    break;
-        case WIZMOTE_BUTTON_TWO_DOUBLE      : applyPreset_visualremote(9);    break;
+        case WIZMOTE_BUTTON_TWO_DOUBLE      : //applyPreset_visualremote(9);    break;
         case WIZMOTE_BUTTON_TWO_TRIPLE      : 
         case WIZMOTE_BUTTON_TWO_QUADRUPLE   : magic_flow(17);    break;
         case WIZMOTE_BUTTON_TWO_LONG        : applyPreset_visualremote(21);    break;
 
-        case WIZMOTE_BUTTON_THREE_SHORT     : applyPreset_visualremote(3);    break;
-        case WIZMOTE_BUTTON_THREE_DOUBLE    : increaseSpeed();    break;
+        case WIZMOTE_BUTTON_THREE_SHORT     : applyPreset3_visualremote(3);    break;
+        case WIZMOTE_BUTTON_THREE_DOUBLE    : //increaseSpeed();    break;
         case WIZMOTE_BUTTON_THREE_TRIPLE:
         case WIZMOTE_BUTTON_THREE_QUADRUPLE    : magic_flow(18);    break;
         case WIZMOTE_BUTTON_THREE_LONG      : applyPreset_visualremote(22);    break;
 
 
-        case WIZMOTE_BUTTON_FOUR_SHORT      : applyPreset_visualremote(4);    break;
-        case WIZMOTE_BUTTON_FOUR_DOUBLE     : increaseSpeed();    break;
+        case WIZMOTE_BUTTON_FOUR_SHORT      : 
+        case WIZMOTE_BUTTON_FOUR_DOUBLE     : applyPreset_visualremote(4);    break;
         case WIZMOTE_BUTTON_FOUR_TRIPLE     : 
         case WIZMOTE_BUTTON_FOUR_QUADRUPLE  : magic_flow(19);    break;
         case WIZMOTE_BUTTON_FOUR_LONG       : applyPreset_visualremote(23);    break;

@@ -1,0 +1,8022 @@
+{
+    "0": {},
+    "18": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 182,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "DNA Spiral"
+    },
+    "2": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 188,
+                "sx": 1,
+                "ix": 252,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 188,
+                "sx": 1,
+                "ix": 252,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 188,
+                "sx": 1,
+                "ix": 252,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 188,
+                "sx": 1,
+                "ix": 252,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "2 Hartslag"
+    },
+    "4": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "4 Stroboscoop"
+    },
+    "5": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 30,
+                "sx": 205,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 30,
+                "sx": 205,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 30,
+                "sx": 205,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 30,
+                "sx": 205,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Chase Rainbow"
+    },
+    "6": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 112,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 112,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 87,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Dancing Shadows"
+    },
+    "7": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 0,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Fireworks 1D"
+    },
+    "8": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 100,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 100,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 1
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 100,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 100,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Heartbeat"
+    },
+    "9": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 0,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 57,
+                "sx": 246,
+                "ix": 255,
+                "pal": 1,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 57,
+                "sx": 246,
+                "ix": 255,
+                "pal": 1,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 359,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 57,
+                "sx": 246,
+                "ix": 255,
+                "pal": 1,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 359,
+                "stop": 367,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 57,
+                "sx": 246,
+                "ix": 255,
+                "pal": 1,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Simon01"
+    },
+    "26": {
+        "on": true,
+        "bri": 33,
+        "transition": 2,
+        "mainseg": 0,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 190,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 88,
+                "sx": 96,
+                "ix": 224,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 88,
+                "sx": 96,
+                "ix": 224,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 88,
+                "sx": 96,
+                "ix": 224,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Aquarium"
+    },
+    "13": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 150,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 91,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 1
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 91,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 91,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Bouncing Balls"
+    },
+    "3": {
+        "on": true,
+        "bri": 33,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 190,
+                "sx": 102,
+                "ix": 128,
+                "pal": 50,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 38,
+                "sx": 24,
+                "ix": 128,
+                "pal": 4,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 38,
+                "sx": 24,
+                "ix": 128,
+                "pal": 4,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 38,
+                "sx": 24,
+                "ix": 128,
+                "pal": 4,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "3 Aquarium"
+    },
+    "30": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 112,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 112,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 87,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "Dancing Shadows"
+    },
+    "1": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 187,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "1 Biertje"
+    },
+    "11": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 20,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 126,
+                "sx": 0,
+                "ix": 128,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 14,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 108,
+                "sx": 19,
+                "ix": 128,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 44,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 147,
+                "sx": 181,
+                "ix": 255,
+                "pal": 3,
+                "c1": 248,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 47,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "fx": 77,
+                "sx": 34,
+                "ix": 225,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "5 Mooi rustig"
+    },
+    "12": {
+        "on": true,
+        "bri": 255,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 66,
+                "sx": 18,
+                "ix": 137,
+                "pal": 35,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 109,
+                "sx": 252,
+                "ix": 131,
+                "pal": 35,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 45,
+                "sx": 165,
+                "ix": 242,
+                "pal": 35,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "fx": 66,
+                "sx": 12,
+                "ix": 213,
+                "pal": 35,
+                "c1": 128,
+                "c2": 154,
+                "c3": 23,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 1
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "7 vuur"
+    },
+    "20": {
+        "on": true,
+        "bri": 142,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 186,
+                "sx": 128,
+                "ix": 186,
+                "pal": 12,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 185,
+                "sx": 128,
+                "ix": 186,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 185,
+                "sx": 128,
+                "ix": 186,
+                "pal": 22,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 185,
+                "sx": 128,
+                "ix": 186,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "9 Dansende pop"
+    },
+    "14": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 3,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 12,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 175,
+                "sx": 128,
+                "ix": 64,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 184,
+                "sx": 30,
+                "ix": 128,
+                "pal": 11,
+                "c1": 191,
+                "c2": 253,
+                "c3": 26,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 76,
+                "sx": 216,
+                "ix": 164,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "fx": 76,
+                "sx": 216,
+                "ix": 164,
+                "pal": 11,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "8 regenboog"
+    },
+    "15": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 3,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 12,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 20,
+                "sx": 227,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 20,
+                "sx": 236,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 20,
+                "sx": 236,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "fx": 20,
+                "sx": 221,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "10 witte sparks"
+    },
+    "17": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 5,
+                "on": true,
+                "frz": false,
+                "bri": 12,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        255,
+                        200
+                    ]
+                ],
+                "fx": 126,
+                "sx": 3,
+                "ix": 128,
+                "pal": 3,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 176,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        255,
+                        224,
+                        160
+                    ]
+                ],
+                "fx": 184,
+                "sx": 0,
+                "ix": 128,
+                "pal": 5,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 23,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        255,
+                        224,
+                        160
+                    ]
+                ],
+                "fx": 93,
+                "sx": 143,
+                "ix": 247,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 135,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        255,
+                        224,
+                        160
+                    ]
+                ],
+                "fx": 93,
+                "sx": 128,
+                "ix": 149,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "6 Mooi rustig goud"
+    },
+    "19": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 2,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 32,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 158,
+                "sx": 94,
+                "ix": 202,
+                "pal": 22,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 158,
+                "sx": 94,
+                "ix": 202,
+                "pal": 22,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 158,
+                "sx": 94,
+                "ix": 202,
+                "pal": 22,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 158,
+                "sx": 94,
+                "ix": 202,
+                "pal": 22,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "12 tja"
+    },
+    "21": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 32,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 128,
+                "sx": 128,
+                "ix": 128,
+                "pal": 2,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 89,
+                "sx": 128,
+                "ix": 128,
+                "pal": 2,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 48,
+                "sx": 128,
+                "ix": 204,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 1
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 50,
+                "sx": 128,
+                "ix": 128,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "14 Goud bling bling"
+    },
+    "22": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 40,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 180,
+                "sx": 128,
+                "ix": 128,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 25,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 128,
+                "ix": 128,
+                "pal": 3,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        255,
+                        200,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 171,
+                "ix": 124,
+                "pal": 4,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 115,
+                "sx": 193,
+                "ix": 193,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "13 Rustig stabiel"
+    },
+    "16": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 182,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 74,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "16 DNA Spiral"
+    },
+    "10": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 1,
+                "sx": 246,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 1,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        8,
+                        255,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        255,
+                        255,
+                        255
+                    ]
+                ],
+                "fx": 1,
+                "sx": 246,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        8,
+                        255,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        255,
+                        255,
+                        255
+                    ]
+                ],
+                "fx": 1,
+                "sx": 246,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": true,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        8,
+                        255,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        255,
+                        255,
+                        255
+                    ]
+                ],
+                "fx": 1,
+                "sx": 246,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": true,
+                "mi": true,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "19 Matrix"
+    },
+    "23": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 0,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 12,
+                "on": true,
+                "frz": false,
+                "bri": 40,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 87,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 87,
+                "sx": 128,
+                "ix": 255,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 87,
+                "sx": 174,
+                "ix": 138,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        255,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        255
+                    ]
+                ],
+                "fx": 87,
+                "sx": 174,
+                "ix": 138,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "20 Color glitter"
+    },
+    "24": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 0,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        0,
+                        0,
+                        255
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 161,
+                "ix": 50,
+                "pal": 70,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 0,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 90,
+                "sx": 128,
+                "ix": 128,
+                "pal": 51,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "21 Vuurwerk"
+    },
+    "25": {
+        "on": true,
+        "bri": 128,
+        "transition": 2,
+        "mainseg": 1,
+        "seg": [
+            {
+                "id": 0,
+                "start": 0,
+                "stop": 16,
+                "startY": 0,
+                "stopY": 16,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 21,
+                "cct": 127,
+                "set": 0,
+                "n": "Matrix",
+                "col": [
+                    [
+                        255,
+                        224,
+                        160
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 126,
+                "sx": 30,
+                "ix": 128,
+                "pal": 2,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": true,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 1,
+                "start": 256,
+                "stop": 299,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Strip Round",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 106,
+                "sx": 128,
+                "ix": 128,
+                "pal": 15,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 2,
+                "start": 299,
+                "stop": 333,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Side Strips",
+                "col": [
+                    [
+                        0,
+                        255,
+                        200
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 106,
+                "sx": 128,
+                "ix": 128,
+                "pal": 15,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "id": 3,
+                "start": 333,
+                "stop": 387,
+                "startY": 0,
+                "stopY": 1,
+                "grp": 1,
+                "spc": 0,
+                "of": 0,
+                "on": true,
+                "frz": false,
+                "bri": 255,
+                "cct": 127,
+                "set": 0,
+                "n": "Trident",
+                "col": [
+                    [
+                        255,
+                        170,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "fx": 106,
+                "sx": 128,
+                "ix": 128,
+                "pal": 15,
+                "c1": 128,
+                "c2": 128,
+                "c3": 16,
+                "sel": false,
+                "rev": false,
+                "mi": false,
+                "rY": false,
+                "mY": false,
+                "tp": false,
+                "o1": false,
+                "o2": false,
+                "o3": false,
+                "si": 0,
+                "m12": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            },
+            {
+                "stop": 0
+            }
+        ],
+        "n": "21 water mooi"
+    }
+}

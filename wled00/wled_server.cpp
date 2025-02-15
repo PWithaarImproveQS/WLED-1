@@ -347,9 +347,9 @@ void initServer()
     request->send(200, FPSTR(CONTENT_TYPE_PLAIN), (String)ESP.getFreeHeap());
   });
   
-  server.on(F("/presets.json"), HTTP_GET, [](AsyncWebServerRequest *request){
-    return;
-  });
+  // server.on(F("/presets.json"), HTTP_GET, [](AsyncWebServerRequest *request){
+  //   return;
+  // });
 
 #ifdef WLED_ENABLE_USERMOD_PAGE
   server.on("/u", HTTP_GET, [](AsyncWebServerRequest *request) {
