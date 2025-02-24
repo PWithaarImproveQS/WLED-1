@@ -84,6 +84,8 @@
 
 #define WIZMOTE_BUTTON_PROGRAM          255
 
+const int LETTER_WIDTH = 4;   // 6Width of each character
+const int LETTER_HEIGHT = 6;  // 8Height of each character
 
 // Define the WizMoteMessageStructure
 typedef struct WizMoteMessageStructure {
@@ -106,7 +108,7 @@ static int brightnessBeforeNightMode_visualremote = NIGHT_MODE_DEACTIVATED;
 static int NextBrightnessStep = 3;
 static bool SyncMode = true;
 static bool SyncModeChanged = false;
-static bool MenuMode = false;
+static bool menuActive = false;
 static bool ButtonPressed = false;
 static uint8_t MenuChoiceStart = 30;
 static uint8_t MagicFlowMode = 0;
@@ -125,6 +127,14 @@ uint32_t nextSequenceNumber() {
 
   // Return the new sequence number
   return sequenceNumber;
+}
+
+// Toggle menu when OFF is long-pressed
+inline void toggleMenu_visualremote() {
+  menuActive = !menuActive;
+  
+  Serial.print("Menu toggled :");
+  Serial.println(menuActive);
 }
 
 static const byte brightnessSteps_visualremote[] = {
@@ -443,13 +453,15 @@ class UsermodVisualRemote : public Usermod {
       BroadcastProgram = false;    
       lastTime = millis();
 
-      if ((incoming->button != WIZMOTE_BUTTON_BRIGHT_DOWN_SHORT) && (incoming->button != WIZMOTE_BUTTON_BRIGHT_UP_SHORT)) {
-        MenuMode = false;
-      }
+      // if ((incoming->button != WIZMOTE_BUTTON_BRIGHT_DOWN_SHORT) && (incoming->button != WIZMOTE_BUTTON_BRIGHT_UP_SHORT)) {
+      //   menuActive = false;
+      // }
         Serial.printf("Incoming Button: %u\n", incoming->button);
       switch (incoming->button) {
+        //        case WIZMOTE_BUTTON_OFF_SHORT             : togglePower_visualremote();                                            break;
+
         case WIZMOTE_BUTTON_OFF_SHORT             : togglePower_visualremote();                                            break;
-        case WIZMOTE_BUTTON_OFF_LONG            : toggleSyncMode_visualremote();                                           break;
+        case WIZMOTE_BUTTON_OFF_LONG            : toggleMenu_visualremote();                                           break;
         case WIZMOTE_BUTTON_ON_SHORT            : setBrightness_visualremote();                                           break;
         case WIZMOTE_BUTTON_ON_LONG            : resetBrightness_visualremote();                                           break;
         
@@ -499,6 +511,8 @@ class UsermodVisualRemote : public Usermod {
     }
 
     void handleOverlayDraw() {
+      Segment &seg = strip.getSegment(segmentId);
+
       uint32_t wifiColor = BLACK;  // default color
 
       switch (WiFi.status()) {
@@ -530,12 +544,12 @@ class UsermodVisualRemote : public Usermod {
         if (millis() - lastTime > timeOutMenu) {
           ButtonPressed = false;
         }   
-        strip.getSegment(segmentId).setPixelColor(segmentPixelOffset, BLUE);       
+        seg.setPixelColor(segmentPixelOffset, BLUE);       
       }
 
       if (BroadcastProgram)
       {        
-        strip.getSegment(segmentId).setPixelColor(segmentPixelOffset, PURPLE);            
+        seg.setPixelColor(segmentPixelOffset, PURPLE);            
       }
       
 
@@ -547,6 +561,35 @@ class UsermodVisualRemote : public Usermod {
         strip.fill(syncColor);
         //strip.getSegment(segmentId).setPixelColor(segmentPixelOffset, WHITE);       
       }
+      const Segment* segments = strip.getSegments();
+      for (unsigned i = 0; i < strip.getSegmentsNum(); i++) {
+        Segment& segment = strip.getSegment(i);
+       
+        if (!segment.is2D()) continue;
+
+        if (menuActive) {
+          strip.fill(CRGB::Black);
+          // 16x16 center
+          int centerX = (segment.width() - (LETTER_WIDTH * 5)) / 2; // "W:1" is 3 characters wide
+          int centerY = (segment.height() - LETTER_HEIGHT) / 2 + 1;
+          
+  
+
+          //seg.setPixelColorXY(8, 8, GREEN);
+          // Draw something like "W:1" for WiFi on
+          
+          segment.drawCharacter('W', centerX, centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
+          segment.drawCharacter(':', centerX + LETTER_WIDTH, centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
+          segment.drawCharacter('O', centerX + (LETTER_WIDTH * 2), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
+          segment.drawCharacter('f', centerX + (LETTER_WIDTH * 3), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
+          segment.drawCharacter('f', centerX + (LETTER_WIDTH * 4), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
+          // Similarly for AP or Sync
+        }
+      
+
+      }
+
+    
 
     }
 
