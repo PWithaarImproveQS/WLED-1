@@ -270,6 +270,19 @@ inline void applyPreset3_visualremote(uint8_t presetID) {
   applyPreset_visualremote(3);
 }
 
+inline void enableAP_visualremote() {
+  if (WiFi.status() == WL_CONNECTED) {
+    return;
+  }
+  if (!apActive) WLED::instance().initAP();       // instantly go to ap mode
+  Serial.println("Enabling Access Point");  
+}
+static char savedClientSSID[33]; 
+
+inline void initWifi() {
+  Serial.println("Enabling WiFi");
+  wifiEnabled = true;
+}
 
 struct Pattern {
   uint8_t id;           // ID of the pattern
@@ -279,7 +292,6 @@ struct Pattern {
 };
 
 unsigned long lastTime = 0;
-
 
 
 // Usermod class
@@ -311,13 +323,17 @@ class UsermodVisualRemote : public Usermod {
   public:
   void setup() {
     Serial.println("VisualRemote mod active!");
-     String name = "";
+    //strncpy(savedClientSSID, multiWiFi[0].clientSSID, 32);     
+    //multiWiFi[0].clientSSID[0] = '\0';
+    apActive = false;
+   //apBehavior = AP_BEHAVIOR_BUTTON_ONLY;
+    //WiFi.mode(WIFI_MODE_NULL);
+    
     for (unsigned presetIndex = 1; presetIndex < 50; presetIndex++)
     {
-      Serial.printf("Preset Index: %u, Name: %s\n", presetIndex, name.c_str());
-
+      String name = "";
       preset_available[presetIndex] = getPresetName(presetIndex, name);
-       
+      Serial.printf("Preset Index: %u, Name: %s\n", presetIndex, name.c_str());       
     }
   }
     void addToConfig(JsonObject& root) override {
@@ -338,7 +354,7 @@ class UsermodVisualRemote : public Usermod {
       configComplete &= getJsonValue(top["SegmentId"], segmentId, 1);  
       configComplete &= getJsonValue(top["SegmentPixelOffset"], segmentPixelOffset, 0);  
       configComplete &= getJsonValue(top["TimeOutMenu"], timeOutMenu, 300);  
-      configComplete &= getJsonValue(top["MagicFlowStart"], MenuChoiceStart, 11);     
+      configComplete &= getJsonValue(top["MagicFlowStart"], MenuChoiceStart, 11);          
 
       return configComplete;
     }
@@ -437,9 +453,12 @@ class UsermodVisualRemote : public Usermod {
         case WIZMOTE_BUTTON_ON_SHORT            : setBrightness_visualremote();                                           break;
         case WIZMOTE_BUTTON_ON_LONG            : resetBrightness_visualremote();                                           break;
         
+        case WIZMOTE_BUTTON_OFF_DOUBLE        : enableAP_visualremote(); break;
+        case WIZMOTE_BUTTON_OFF_TRIPLE        : initWifi(); break;
+
         case WIZMOTE_BUTTON_NIGHT_SHORT          : broadcastProgram();                                break;
-        case WIZMOTE_BUTTON_NIGHT_DOUBLE         : broadcastProgram();                                break;
-        case WIZMOTE_BUTTON_NIGHT_TRIPLE         : broadcastProgram();                                break;
+        case WIZMOTE_BUTTON_NIGHT_DOUBLE         : initWifi();                                break;
+        case WIZMOTE_BUTTON_NIGHT_TRIPLE         : initWifi();                                break;
         case WIZMOTE_BUTTON_NIGHT_LONG           : toggleSyncMode_visualremote();                                break;
         case WIZMOTE_BUTTON_BRIGHT_UP_SHORT      : onButtonUpPress();                                               break;
         case WIZMOTE_BUTTON_BRIGHT_UP_LONG      : applyPreset_visualremote(6);    break;
