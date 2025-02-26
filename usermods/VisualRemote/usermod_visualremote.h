@@ -84,8 +84,8 @@
 
 #define WIZMOTE_BUTTON_PROGRAM          255
 
-const int LETTER_WIDTH = 4;   // 6Width of each character
-const int LETTER_HEIGHT = 6;  // 8Height of each character
+const int LETTER_WIDTH = 6;   // 6Width of each character
+const int LETTER_HEIGHT = 8;  // 8Height of each character
 
 // Define the WizMoteMessageStructure
 typedef struct WizMoteMessageStructure {
@@ -136,6 +136,44 @@ inline void toggleMenu_visualremote() {
   Serial.print("Menu toggled :");
   Serial.println(menuActive);
 }
+
+
+const byte wifi_icon[16][16] PROGMEM = {
+    {0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0},
+    {0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0},
+    {0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0},
+    {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1},
+    {1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1},
+    {1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1},
+    {0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0},
+    {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0},
+    {0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0},
+    {1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1},
+    {1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1},
+    {0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0},
+    {0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0},
+    {0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0},
+    {0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0}
+};
+const byte access_point_icon[16][16] PROGMEM = {
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0},
+  {0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0},
+  {0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0},
+  {0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0},
+  {0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0},
+  {0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0},
+  {0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0},
+  {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+};
 
 static const byte brightnessSteps_visualremote[] = {
   6, 33, 50, 128 
@@ -330,6 +368,65 @@ class UsermodVisualRemote : public Usermod {
       return nullptr; // Return nullptr if no matching pattern is found
     }
 
+    // Menu variables
+    uint8_t menuIndex = 0; // 0: WiFi, 1: AP, 2: Sync
+    long scrollOffset = 0;
+    unsigned long lastScrollTime = 0;
+    const int scrollSpeed = 100; // milliseconds between scroll steps
+
+ 
+
+    // Function to handle scrolling the text
+    void scrollText(Segment& segment, String text, int x, int y, CRGB color) {
+      int textWidth = text.length() * (LETTER_WIDTH + 1); // Add 1 for space
+      int startX = segment.width(); // Start off-screen to the right
+
+      for (int i = 0; i < segment.width(); ++i) {
+        int charIndex = (i + scrollOffset) / (LETTER_WIDTH + 1); // Use LETTER_WIDTH + 1
+        if (charIndex >= 0 && charIndex < text.length()) {
+          int charX = startX - scrollOffset + i;
+          segment.drawCharacter(text[charIndex], charX, y, LETTER_WIDTH, LETTER_HEIGHT, color);
+        }
+      }
+
+      // Update scroll offset for the next frame
+      scrollOffset++;
+      if (scrollOffset > textWidth + startX) {
+        scrollOffset = 0; // Reset scroll
+      }
+    }
+
+    // Function to handle menu item toggling
+    void toggleMenuItem() {
+      lastTime = millis();
+      switch (menuIndex) {
+        case 0: // WiFi
+          wifiEnabled = !wifiEnabled;       
+          SyncModeChanged = true;        
+            
+          Serial.println("Toggling WiFi ");
+          break;
+        case 1: // AP
+          // Toggle AP state
+          apActive = !apActive;
+          SyncModeChanged = true;
+          if (apActive) {            
+            WLED::instance().initAP();
+          } else {
+            WiFi.softAPdisconnect(true);
+            WiFi.mode(WIFI_STA);
+          }
+          Serial.println("Toggling AP");
+          break;
+        case 2: // Sync
+          // Toggle Sync state
+          SyncMode = !SyncMode;
+          SyncModeChanged = true;
+          Serial.println("Toggling Sync");
+          break;
+      }
+    }
+
   public:
   void setup() {
     Serial.println("VisualRemote mod active!");
@@ -371,45 +468,53 @@ class UsermodVisualRemote : public Usermod {
 
 
    void onButtonUpPress() {
-    
-    if (MagicFlowMode > 0) 
-    {
-      magic_flow(MagicFlowProgram);
-    } else {
-      do {
-        currentEffectIndex++;
-    
-        if (currentEffectIndex >= 255) {
-          currentEffectIndex = MenuChoiceStart;
-        }
-        DEBUG_PRINTF("> Up effect %d %d \n", currentEffectIndex, MenuChoiceStart);
-        DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
+      if (menuActive) {
+        menuIndex = (menuIndex + 1) % 2; // Cycle through 0, 1
+        scrollOffset = 0; // Reset scroll when changing menu items
+        return;
+      }
+      if (MagicFlowMode > 0) 
+      {
+        magic_flow(MagicFlowProgram);
+      } else {
+        do {
+          currentEffectIndex++;
+      
+          if (currentEffectIndex >= 255) {
+            currentEffectIndex = MenuChoiceStart;
+          }
+          DEBUG_PRINTF("> Up effect %d %d \n", currentEffectIndex, MenuChoiceStart);
+          DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
 
-      } while (!preset_available[currentEffectIndex]);
-      DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
-      applyPreset_visualremote(currentEffectIndex);
-    } 
+        } while (!preset_available[currentEffectIndex]);
+        DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
+        applyPreset_visualremote(currentEffectIndex);
+      } 
    }
 
    void onButtonDownPress() {
-    if (MagicFlowMode > 0) 
-    {
-      magic_flow(MagicFlowProgram);
-    } else {
-      do {
-        currentEffectIndex--;
+      if (menuActive) {
+        toggleMenuItem();
+        return;
+      }
+      if (MagicFlowMode > 0) 
+      {
+        magic_flow(MagicFlowProgram);
+      } else {
+        do {
+          currentEffectIndex--;
 
-     
-        if (currentEffectIndex < MenuChoiceStart) {
-          currentEffectIndex = 60;
-        }
-        DEBUG_PRINTF("> Down effect %d %d \n", currentEffectIndex, MenuChoiceStart);
-        DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
+      
+          if (currentEffectIndex < MenuChoiceStart) {
+            currentEffectIndex = 60;
+          }
+          DEBUG_PRINTF("> Down effect %d %d \n", currentEffectIndex, MenuChoiceStart);
+          DEBUG_PRINTF("preset_available[%u] = %s\n", currentEffectIndex, preset_available[currentEffectIndex] ? "true" : "false");
 
-      } while (!preset_available[currentEffectIndex]);
-      DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
-      applyPreset_visualremote(currentEffectIndex);
-    } 
+        } while (!preset_available[currentEffectIndex]);
+        DEBUG_PRINTF("> Start Display effect %d \n", currentEffectIndex);
+        applyPreset_visualremote(currentEffectIndex);
+      } 
    }
 
 
@@ -561,35 +666,32 @@ class UsermodVisualRemote : public Usermod {
         strip.fill(syncColor);
         //strip.getSegment(segmentId).setPixelColor(segmentPixelOffset, WHITE);       
       }
+
       const Segment* segments = strip.getSegments();
       for (unsigned i = 0; i < strip.getSegmentsNum(); i++) {
-        Segment& segment = strip.getSegment(i);
-       
-        if (!segment.is2D()) continue;
+        Segment& matrixSegment = strip.getSegment(i);
+        if (!matrixSegment.is2D()) continue;
 
         if (menuActive) {
-          strip.fill(CRGB::Black);
-          // 16x16 center
-          int centerX = (segment.width() - (LETTER_WIDTH * 5)) / 2; // "W:1" is 3 characters wide
-          int centerY = (segment.height() - LETTER_HEIGHT) / 2 + 1;
-          
-  
+          strip.fill(CRGB::Black); // Clear the segment
 
-          //seg.setPixelColorXY(8, 8, GREEN);
-          // Draw something like "W:1" for WiFi on
-          
-          segment.drawCharacter('W', centerX, centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
-          segment.drawCharacter(':', centerX + LETTER_WIDTH, centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
-          segment.drawCharacter('O', centerX + (LETTER_WIDTH * 2), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
-          segment.drawCharacter('f', centerX + (LETTER_WIDTH * 3), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
-          segment.drawCharacter('f', centerX + (LETTER_WIDTH * 4), centerY, LETTER_WIDTH, LETTER_HEIGHT, CRGB::Red);
-          // Similarly for AP or Sync
+          // Determine which icon to use based on menuIndex
+          const byte (*iconData)[16] = (menuIndex == 0) ? wifi_icon : access_point_icon;
+          uint32_t color = (menuIndex == 0) ? wifiColor : (apActive) ? CRGB::Green : CRGB::Red;
+
+          // Plot the icon on the segment
+          for (int y = 0; y < 16; y++) {
+            for (int x = 0; x < 16; x++) {
+              // Read the pixel value from PROGMEM
+              byte pixelValue = pgm_read_byte(&iconData[y][x]);
+
+              if (pixelValue == 1) {
+                matrixSegment.setPixelColorXY(x, y, color);
+              }
+            }
+          }
         }
-      
-
       }
-
-    
 
     }
 
