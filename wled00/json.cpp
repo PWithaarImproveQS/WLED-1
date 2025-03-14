@@ -34,7 +34,7 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
   //DEBUG_PRINTLN(F("-- JSON deserialize segment."));
   Segment& seg = strip.getSegment(id);
   //DEBUG_PRINTF_P(PSTR("--  Original segment: %p (%p)\n"), &seg, seg.data);
-  Segment prev = seg; //make a backup so we can tell if something changed (calling copy constructor)
+  const Segment prev = seg; //make a backup so we can tell if something changed (calling copy constructor)
   //DEBUG_PRINTF_P(PSTR("--  Duplicate segment: %p (%p)\n"), &prev, prev.data);
 
   int start = elem["start"] | seg.start;
@@ -68,7 +68,7 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
   if (elem["n"]) {
     // name field exists
     if (seg.name) { //clear old name
-      delete[] seg.name;
+      free(seg.name);
       seg.name = nullptr;
     }
 
@@ -77,7 +77,7 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
     if (name != nullptr) len = strlen(name);
     if (len > 0) {
       if (len > WLED_MAX_SEGNAME_LEN) len = WLED_MAX_SEGNAME_LEN;
-      seg.name = new char[len+1];
+      seg.name = static_cast<char*>(malloc(len+1));
       if (seg.name) strlcpy(seg.name, name, WLED_MAX_SEGNAME_LEN+1);
     } else {
       // but is empty (already deleted above)
@@ -86,27 +86,27 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
   } else if (start != seg.start || stop != seg.stop) {
     // clearing or setting segment without name field
     if (seg.name) {
-      delete[] seg.name;
+      free(seg.name);
       seg.name = nullptr;
     }
   }
 
-  uint16_t grp = elem["grp"] | seg.grouping;
-  uint16_t spc = elem[F("spc")] | seg.spacing;
-  uint16_t of  = seg.offset;
-  uint8_t  soundSim = elem["si"] | seg.soundSim;
-  uint8_t  map1D2D  = elem["m12"] | seg.map1D2D;
+  uint16_t grp       = elem["grp"] | seg.grouping;
+  uint16_t spc       = elem[F("spc")] | seg.spacing;
+  uint16_t of        = seg.offset;
+  uint8_t  soundSim  = elem["si"] | seg.soundSim;
+  uint8_t  map1D2D   = elem["m12"] | seg.map1D2D;
+  uint8_t  set       = elem[F("set")] | seg.set;
+  bool     selected  = getBoolVal(elem["sel"], seg.selected);
+  bool     reverse   = getBoolVal(elem["rev"], seg.reverse);
+  bool     mirror    = getBoolVal(elem["mi"] , seg.mirror);
+  #ifndef WLED_DISABLE_2D
+  bool     reverse_y = getBoolVal(elem["rY"]   , seg.reverse_y);
+  bool     mirror_y  = getBoolVal(elem["mY"]   , seg.mirror_y);
+  bool     transpose = getBoolVal(elem[F("tp")], seg.transpose);
+  #endif
 
-  if ((spc>0 && spc!=seg.spacing) || seg.map1D2D!=map1D2D) seg.fill(BLACK); // clear spacing gaps
-
-  seg.map1D2D  = constrain(map1D2D, 0, 7);
-  seg.soundSim = constrain(soundSim, 0, 3);
-
-  uint8_t set = elem[F("set")] | seg.set;
-  seg.set = constrain(set, 0, 3);
-
-  int len = 1;
-  if (stop > start) len = stop - start;
+  int len = (stop > start) ? stop - start : 1;
   int offset = elem[F("of")] | INT32_MAX;
   if (offset != INT32_MAX) {
     int offsetAbs = abs(offset);
@@ -117,7 +117,7 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
   if (stop > start && of > len -1) of = len -1;
 
   // update segment (delete if necessary)
-  seg.setUp(start, stop, grp, spc, of, startY, stopY); // strip needs to be suspended for this to work without issues
+  seg.setGeometry(start, stop, grp, spc, of, startY, stopY, map1D2D); // strip needs to be suspended for this to work without issues
 
   if (newSeg) seg.refreshLightCapabilities(); // fix for #3403
 
@@ -206,47 +206,30 @@ bool deserializeSegment(JsonObject elem, byte it, byte presetId)
   }
   #endif
 
+  //seg.map1D2D   = constrain(map1D2D, 0, 7); // done in setGeometry()
+  seg.set       = constrain(set, 0, 3);
+  seg.soundSim  = constrain(soundSim, 0, 3);
+  seg.selected  = selected;
+  seg.reverse   = reverse;
+  seg.mirror    = mirror;
   #ifndef WLED_DISABLE_2D
-  bool reverse  = seg.reverse;
-  bool mirror   = seg.mirror;
-  #endif
-  seg.selected  = getBoolVal(elem["sel"], seg.selected);
-  seg.reverse   = getBoolVal(elem["rev"], seg.reverse);
-  seg.mirror    = getBoolVal(elem["mi"] , seg.mirror);
-  #ifndef WLED_DISABLE_2D
-  bool reverse_y = seg.reverse_y;
-  bool mirror_y  = seg.mirror_y;
-  seg.reverse_y  = getBoolVal(elem["rY"]   , seg.reverse_y);
-  seg.mirror_y   = getBoolVal(elem["mY"]   , seg.mirror_y);
-  seg.transpose  = getBoolVal(elem[F("tp")], seg.transpose);
-  if (seg.is2D() && seg.map1D2D == M12_pArc && (reverse != seg.reverse || reverse_y != seg.reverse_y || mirror != seg.mirror || mirror_y != seg.mirror_y)) seg.fill(BLACK); // clear entire segment (in case of Arc 1D to 2D expansion)
+  seg.reverse_y = reverse_y;
+  seg.mirror_y  = mirror_y;
+  seg.transpose = transpose;
   #endif
 
   byte fx = seg.mode;
-  byte last = strip.getModeCount();
-  // partial fix for #3605
-  if (!elem["fx"].isNull() && elem["fx"].is<const char*>()) {
-    const char *tmp = elem["fx"].as<const char *>();
-    if (strlen(tmp) > 3 && (strchr(tmp,'r') || strchr(tmp,'~') != strrchr(tmp,'~'))) last = 0; // we have "X~Y(r|[w]~[-])" form
-  }
-  // end fix
-  if (getVal(elem["fx"], &fx, 0, last)) { //load effect ('r' random, '~' inc/dec, 0-255 exact value, 5~10r pick random between 5 & 10)
+  if (getVal(elem["fx"], &fx, 0, strip.getModeCount())) {
     if (!presetId && currentPlaylist>=0) unloadPlaylist();
     if (fx != seg.mode) seg.setMode(fx, elem[F("fxdef")]);
   }
 
-  //getVal also supports inc/decrementing and random
   getVal(elem["sx"], &seg.speed);
   getVal(elem["ix"], &seg.intensity);
 
   uint8_t pal = seg.palette;
-  last = strip.getPaletteCount();
-  if (!elem["pal"].isNull() && elem["pal"].is<const char*>()) {
-    const char *tmp = elem["pal"].as<const char *>();
-    if (strlen(tmp) > 3 && (strchr(tmp,'r') || strchr(tmp,'~') != strrchr(tmp,'~'))) last = 0; // we have "X~Y(r|[w]~[-])" form
-  }
   if (seg.getLightCapabilities() & 1) {  // ignore palette for White and On/Off segments
-    if (getVal(elem["pal"], &pal, 0, last)) seg.setPalette(pal);
+    if (getVal(elem["pal"], &pal, 0, strip.getPaletteCount())) seg.setPalette(pal);
   }
 
   getVal(elem["c1"], &seg.custom1);
@@ -351,15 +334,20 @@ bool deserializeState(JsonObject root, byte callMode, byte presetId)
     tr = root[F("transition")] | -1;
     if (tr >= 0) {
       transitionDelay = tr * 100;
-      if (fadeTransition) strip.setTransition(transitionDelay);
+      strip.setTransition(transitionDelay);
     }
   }
+
+#ifndef WLED_DISABLE_MODE_BLEND
+  blendingStyle = root[F("bs")] | blendingStyle;
+  blendingStyle &= 0x1F;
+#endif
 
   // temporary transition (applies only once)
   tr = root[F("tt")] | -1;
   if (tr >= 0) {
     jsonTransitionOnce = true;
-    if (fadeTransition) strip.setTransition(tr * 100);
+    strip.setTransition(tr * 100);
   }
 
   tr = root[F("tb")] | -1;
@@ -406,35 +394,38 @@ bool deserializeState(JsonObject root, byte callMode, byte presetId)
 
   int it = 0;
   JsonVariant segVar = root["seg"];
-  if (!segVar.isNull()) strip.suspend();
-  if (segVar.is<JsonObject>())
-  {
-    int id = segVar["id"] | -1;
-    //if "seg" is not an array and ID not specified, apply to all selected/checked segments
-    if (id < 0) {
-      //apply all selected segments
-      //bool didSet = false;
-      for (size_t s = 0; s < strip.getSegmentsNum(); s++) {
-        Segment &sg = strip.getSegment(s);
-        if (sg.isActive() && sg.isSelected()) {
-          deserializeSegment(segVar, s, presetId);
-          //didSet = true;
+  if (!segVar.isNull()) {
+    // we may be called during strip.service() so we must not modify segments while effects are executing
+    strip.suspend();
+    const unsigned long start = millis();
+    while (strip.isServicing() && millis() - start < strip.getFrameTime()) yield(); // wait until frame is over
+    #ifdef WLED_DEBUG
+    if (millis() - start > 0) DEBUG_PRINTLN(F("JSON: Waited for strip to finish servicing."));
+    #endif
+    if (segVar.is<JsonObject>()) {
+      int id = segVar["id"] | -1;
+      //if "seg" is not an array and ID not specified, apply to all selected/checked segments
+      if (id < 0) {
+        //apply all selected segments
+        for (size_t s = 0; s < strip.getSegmentsNum(); s++) {
+          Segment &sg = strip.getSegment(s);
+          if (sg.isActive() && sg.isSelected()) {
+            deserializeSegment(segVar, s, presetId);
+          }
         }
+      } else {
+        deserializeSegment(segVar, id, presetId); //apply only the segment with the specified ID
       }
-      //TODO: not sure if it is good idea to change first active but unselected segment
-      //if (!didSet) deserializeSegment(segVar, strip.getMainSegmentId(), presetId);
     } else {
-      deserializeSegment(segVar, id, presetId); //apply only the segment with the specified ID
+      size_t deleted = 0;
+      JsonArray segs = segVar.as<JsonArray>();
+      for (JsonObject elem : segs) {
+        if (deserializeSegment(elem, it++, presetId) && !elem["stop"].isNull() && elem["stop"]==0) deleted++;
+      }
+      if (strip.getSegmentsNum() > 3 && deleted >= strip.getSegmentsNum()/2U) strip.purgeSegments(); // batch deleting more than half segments
     }
-  } else {
-    size_t deleted = 0;
-    JsonArray segs = segVar.as<JsonArray>();
-    for (JsonObject elem : segs) {
-      if (deserializeSegment(elem, it++, presetId) && !elem["stop"].isNull() && elem["stop"]==0) deleted++;
-    }
-    if (strip.getSegmentsNum() > 3 && deleted >= strip.getSegmentsNum()/2U) strip.purgeSegments(); // batch deleting more than half segments
+    strip.resume();
   }
-  strip.resume();
 
   UsermodManager::readFromJsonState(root);
 
@@ -467,7 +458,7 @@ bool deserializeState(JsonObject root, byte callMode, byte presetId)
     DEBUG_PRINTF_P(PSTR("Preset direct: %d\n"), currentPreset);
   } else if (!root["ps"].isNull()) {
     // we have "ps" call (i.e. from button or external API call) or "pd" that includes "ps" (i.e. from UI call)
-    if (root["win"].isNull() && getVal(root["ps"], &presetCycCurr, 0, 0) && presetCycCurr > 0 && presetCycCurr < 251 && presetCycCurr != currentPreset) {
+    if (root["win"].isNull() && getVal(root["ps"], &presetCycCurr, 1, 250) && presetCycCurr > 0 && presetCycCurr < 251 && presetCycCurr != currentPreset) {
       DEBUG_PRINTF_P(PSTR("Preset select: %d\n"), presetCycCurr);
       // b) preset ID only or preset that does not change state (use embedded cycling limits if they exist in getVal())
       applyPreset(presetCycCurr, callMode); // async load from file system (only preset ID was specified)
@@ -512,7 +503,7 @@ bool deserializeState(JsonObject root, byte callMode, byte presetId)
   return stateResponse;
 }
 
-void serializeSegment(JsonObject& root, Segment& seg, byte id, bool forPreset, bool segmentBounds)
+void serializeSegment(const JsonObject& root, const Segment& seg, byte id, bool forPreset, bool segmentBounds)
 {
   root["id"] = id;
   if (segmentBounds) {
@@ -587,6 +578,9 @@ void serializeState(JsonObject root, bool forPreset, bool includeBri, bool segme
     root["on"] = (bri > 0);
     root["bri"] = briLast;
     root[F("transition")] = transitionDelay/100; //in 100ms
+#ifndef WLED_DISABLE_MODE_BLEND
+    root[F("bs")] = blendingStyle;
+#endif
   }
 
   if (!forPreset) {
@@ -780,7 +774,7 @@ void serializeInfo(JsonObject root)
 
   root[F("freeheap")] = ESP.getFreeHeap();
   #if defined(ARDUINO_ARCH_ESP32)
-  if (psramSafe && psramFound()) root[F("psram")] = ESP.getFreePsram();
+  if (psramFound()) root[F("psram")] = ESP.getFreePsram();
   #endif
   root[F("uptime")] = millis()/1000 + rolloverMillis*4294967;
 
@@ -902,10 +896,7 @@ void serializePalettes(JsonObject root, int page)
         setPaletteColors(curPalette, PartyColors_p);
         break;
       case 1: //random
-          curPalette.add("r");
-          curPalette.add("r");
-          curPalette.add("r");
-          curPalette.add("r");
+           for (int j = 0; j < 4; j++) curPalette.add("r");
         break;
       case 2: //primary color only
         curPalette.add("c1");
@@ -922,52 +913,19 @@ void serializePalettes(JsonObject root, int page)
         curPalette.add("c1");
         break;
       case 5: //primary + secondary (+tertiary if not off), more distinct
+        for (int j = 0; j < 5; j++) curPalette.add("c1");
+        for (int j = 0; j < 5; j++) curPalette.add("c2");
+        for (int j = 0; j < 5; j++) curPalette.add("c3");
         curPalette.add("c1");
-        curPalette.add("c1");
-        curPalette.add("c1");
-        curPalette.add("c1");
-        curPalette.add("c1");
-        curPalette.add("c2");
-        curPalette.add("c2");
-        curPalette.add("c2");
-        curPalette.add("c2");
-        curPalette.add("c2");
-        curPalette.add("c3");
-        curPalette.add("c3");
-        curPalette.add("c3");
-        curPalette.add("c3");
-        curPalette.add("c3");
-        curPalette.add("c1");
-        break;
-      case 6: //Party colors
-        setPaletteColors(curPalette, PartyColors_p);
-        break;
-      case 7: //Cloud colors
-        setPaletteColors(curPalette, CloudColors_p);
-        break;
-      case 8: //Lava colors
-        setPaletteColors(curPalette, LavaColors_p);
-        break;
-      case 9: //Ocean colors
-        setPaletteColors(curPalette, OceanColors_p);
-        break;
-      case 10: //Forest colors
-        setPaletteColors(curPalette, ForestColors_p);
-        break;
-      case 11: //Rainbow colors
-        setPaletteColors(curPalette, RainbowColors_p);
-        break;
-      case 12: //Rainbow stripe colors
-        setPaletteColors(curPalette, RainbowStripeColors_p);
         break;
       default:
-        {
-        if (i>=palettesCount) {
+        if (i >= palettesCount)
           setPaletteColors(curPalette, strip.customPalettes[i - palettesCount]);
-        } else {
+        else if (i < 13) // palette 6 - 12, fastled palettes
+          setPaletteColors(curPalette, *fastledPalettes[i-6]);
+        else {
           memcpy_P(tcp, (byte*)pgm_read_dword(&(gGradientPalettes[i - 13])), 72);
           setPaletteColors(curPalette, tcp);
-        }
         }
         break;
     }
@@ -1107,7 +1065,7 @@ void serveJson(AsyncWebServerRequest* request)
   }
 
   if (!requestJSONBufferLock(17)) {
-    serveJsonError(request, 503, ERR_NOBUF);
+    request->deferResponse();    
     return;
   }
   // releaseJSONBufferLock() will be called when "response" is destroyed (from AsyncWebServer)
