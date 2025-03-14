@@ -5,7 +5,7 @@ This usermod-v2 modification allows the connection of a PIR sensor to switch on 
 _Story:_
 
 I use the PIR Sensor to automatically turn on the WLED analog clock in my home office room when I am there.
-The LED strip is switched [using a relay](https://github.com/Aircoookie/WLED/wiki/Control-a-relay-with-WLED) to keep the power consumption low when it is switched off.
+The LED strip is switched [using a relay](https://kno.wled.ge/features/relay-control/) to keep the power consumption low when it is switched off.
 
 ## Web interface
 
@@ -52,7 +52,7 @@ class MyUsermod : public Usermod {
 
   void togglePIRSensor() {
     #ifdef USERMOD_PIR_SENSOR_SWITCH
-    PIRsensorSwitch *PIRsensor = (PIRsensorSwitch::*) usermods.lookup(USERMOD_ID_PIRSWITCH);
+    PIRsensorSwitch *PIRsensor = (PIRsensorSwitch::*) UsermodManager::lookup(USERMOD_ID_PIRSWITCH);
     if (PIRsensor != nullptr) {
       PIRsensor->EnablePIRsensor(!PIRsensor->PIRsensorEnabled());
     }
@@ -75,6 +75,9 @@ Usermod can be configured via the Usermods settings page.
 * `mqtt-only` - send only MQTT messages, do not interact with WLED
 * `off-only` - only trigger presets or turn WLED on/off if WLED is not already on (displaying effect)
 * `notifications` - enable or disable sending notifications to other WLED instances using Sync button
+* `HA-discovery` - enable automatic discovery in Home Assistant
+* `override` - override PIR input when WLED state is changed using UI
+* `domoticz-idx` - Domoticz virtual switch ID (used with MQTT `domoticz/in`)
 
 
 Have fun - @gegu & @blazoncek
@@ -91,3 +94,10 @@ Have fun - @gegu & @blazoncek
 * Added compile time option for off timer.
 * Added Home Assistant autodiscovery MQTT broadcast.
 * Updated info on compiling.
+
+2023-??
+* Override option
+* Domoticz virtual switch ID (used with MQTT `domoticz/in`)
+
+2024-02
+* Added compile time option to expand number of PIR sensors (they are logically ORed) `-D PIR_SENSOR_MAX_SENSORS=3`
